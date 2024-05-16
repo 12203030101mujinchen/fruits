@@ -1,0 +1,1 @@
+请注意，上传的fruits_tf2.3-master文件夹中缺少models文件夹，该文件夹中的cnn_fruits.h5由于超过了100mb的文件传输限制导致不得不删除,使用时应该建立models文件夹，再用train_cnn.py和test_model.py生成新的h5模型
