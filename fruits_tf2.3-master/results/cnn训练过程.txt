@@ -1,0 +1,84 @@
+D:\newcanda\envs\flowers\python.exe C:\Users\mujinchen\Desktop\fruits\fruits_tf2.3-master\train_cnn.py
+Found 5342 files belonging to 37 classes.
+2024-05-14 23:29:14.054132: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Found 1316 files belonging to 37 classes.
+['佛手瓜', '哈密瓜', '木瓜', '李子', '枇杷', '柠檬', '桂圆', '梨', '榴莲', '橘子', '毛丹', '牛油果', '猕猴桃', '甘蔗', '番石榴-百', '白兰瓜', '白心火龙果', '百香果', '粑粑柑', '红心火龙果', '红苹果', '胡萝卜', '芒果', '芦柑', '草莓', '荔枝', '莲雾', '菠萝', '菠萝莓', '菠萝蜜', '葡萄-白', '蓝莓', '蟠桃', '车厘子', '金桔', '黄桃', '黑莓']
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ rescaling (Rescaling)       (None, 224, 224, 3)       0
+
+ conv2d (Conv2D)             (None, 222, 222, 32)      896
+
+ max_pooling2d (MaxPooling2D  (None, 111, 111, 32)     0
+ )
+
+ conv2d_1 (Conv2D)           (None, 109, 109, 64)      18496
+
+ max_pooling2d_1 (MaxPooling  (None, 54, 54, 64)       0
+ 2D)
+
+ flatten (Flatten)           (None, 186624)            0
+
+ dense (Dense)               (None, 128)               23888000
+
+ dense_1 (Dense)             (None, 37)                4773
+
+=================================================================
+Total params: 23,912,165
+Trainable params: 23,912,165
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/10
+244/334 [====================>.........] - ETA: 18s - loss: 3.4656 - accuracy: 0.06222024-05-14 23:30:06.231079: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 18s - loss: 3.4658 - accuracy: 0.06222024-05-14 23:30:06.865068: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 3.3974 - accuracy: 0.07442024-05-14 23:30:20.219769: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 75s 223ms/step - loss: 3.3745 - accuracy: 0.0794 - val_loss: 2.9492 - val_accuracy: 0.1626
+Epoch 2/10
+244/334 [====================>.........] - ETA: 19s - loss: 2.8085 - accuracy: 0.19112024-05-14 23:31:23.411752: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 19s - loss: 2.8088 - accuracy: 0.19052024-05-14 23:31:24.078085: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 2.7696 - accuracy: 0.19522024-05-14 23:31:37.633735: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 77s 232ms/step - loss: 2.7614 - accuracy: 0.1984 - val_loss: 2.6134 - val_accuracy: 0.2287
+Epoch 3/10
+244/334 [====================>.........] - ETA: 20s - loss: 2.4577 - accuracy: 0.27822024-05-14 23:32:41.965745: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 19s - loss: 2.4568 - accuracy: 0.27832024-05-14 23:32:42.640394: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 2.4277 - accuracy: 0.28502024-05-14 23:32:56.550693: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 79s 236ms/step - loss: 2.4213 - accuracy: 0.2881 - val_loss: 2.4408 - val_accuracy: 0.2652
+Epoch 4/10
+244/334 [====================>.........] - ETA: 20s - loss: 2.1612 - accuracy: 0.35252024-05-14 23:34:00.102217: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 19s - loss: 2.1634 - accuracy: 0.35172024-05-14 23:34:00.779029: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 2.1352 - accuracy: 0.35802024-05-14 23:34:14.401928: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 78s 233ms/step - loss: 2.1304 - accuracy: 0.3624 - val_loss: 2.3506 - val_accuracy: 0.3070
+Epoch 5/10
+244/334 [====================>.........] - ETA: 20s - loss: 1.8899 - accuracy: 0.44932024-05-14 23:35:18.440114: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 19s - loss: 1.8925 - accuracy: 0.44792024-05-14 23:35:19.127609: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 1.8620 - accuracy: 0.45632024-05-14 23:35:32.903200: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 79s 235ms/step - loss: 1.8575 - accuracy: 0.4568 - val_loss: 2.6481 - val_accuracy: 0.2606
+Epoch 6/10
+244/334 [====================>.........] - ETA: 20s - loss: 1.6056 - accuracy: 0.52482024-05-14 23:36:36.598962: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 19s - loss: 1.6056 - accuracy: 0.52532024-05-14 23:36:37.267182: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 1.5709 - accuracy: 0.53542024-05-14 23:36:50.867866: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 78s 233ms/step - loss: 1.5589 - accuracy: 0.5414 - val_loss: 2.4047 - val_accuracy: 0.3488
+Epoch 7/10
+244/334 [====================>.........] - ETA: 20s - loss: 1.2868 - accuracy: 0.61042024-05-14 23:37:55.091084: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 19s - loss: 1.2828 - accuracy: 0.61112024-05-14 23:37:55.764755: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 1.2385 - accuracy: 0.62362024-05-14 23:38:09.691796: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 79s 236ms/step - loss: 1.2351 - accuracy: 0.6275 - val_loss: 2.7771 - val_accuracy: 0.3146
+Epoch 8/10
+244/334 [====================>.........] - ETA: 20s - loss: 0.8696 - accuracy: 0.74562024-05-14 23:39:13.586342: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 19s - loss: 0.8680 - accuracy: 0.74572024-05-14 23:39:14.255176: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 0.8278 - accuracy: 0.75832024-05-14 23:39:28.001250: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 78s 234ms/step - loss: 0.8158 - accuracy: 0.7628 - val_loss: 2.6840 - val_accuracy: 0.3457
+Epoch 9/10
+244/334 [====================>.........] - ETA: 20s - loss: 0.5307 - accuracy: 0.84942024-05-14 23:40:31.882170: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 19s - loss: 0.5258 - accuracy: 0.85122024-05-14 23:40:32.538327: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 0.4965 - accuracy: 0.85902024-05-14 23:40:46.338155: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 78s 234ms/step - loss: 0.4903 - accuracy: 0.8611 - val_loss: 2.6997 - val_accuracy: 0.3655
+Epoch 10/10
+244/334 [====================>.........] - ETA: 19s - loss: 0.2702 - accuracy: 0.93602024-05-14 23:41:49.601230: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+247/334 [=====================>........] - ETA: 19s - loss: 0.2722 - accuracy: 0.93552024-05-14 23:41:50.262086: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+309/334 [==========================>...] - ETA: 5s - loss: 0.2644 - accuracy: 0.93652024-05-14 23:42:03.884065: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+334/334 [==============================] - 78s 232ms/step - loss: 0.2561 - accuracy: 0.9388 - val_loss: 3.1722 - val_accuracy: 0.3488
+该循环程序运行时间： 779.3874197006226 s
